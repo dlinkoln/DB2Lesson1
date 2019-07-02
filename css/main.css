@@ -232,7 +232,7 @@ opacity: 0.05;
     border-left:4px solid #0AD69C;
     height: 48px; 
 }
-svg path{
+.sidebar svg path{
     fill: #8089a6 !important;
     fill-opacity: 1 !important;
 }
@@ -324,6 +324,9 @@ svg path{
 .right{
     background: white;
     width: 73%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .right__input-box{
     height: 48px;
@@ -341,4 +344,65 @@ svg path{
     opacity:0.3;
     color:#DADADA;
     margin-right:20px;
+}
+/* chat */
+.right__chat{
+    background: white;
+    
+}
+.msg{
+    display:flex;
+    width: 60%;
+    margin-left: 21px;
+    margin-top:20px;
+}
+.msg__img{
+    display: flex;
+    align-items: flex-end;
+    margin-right:11px;
+}
+.msg__text{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    background: #F7F9FC;
+    line-height: 20px;
+    border-radius: 5px;
+    padding:12px 87px 12px 14px;
+}
+.msg__text::before{
+    position: absolute;
+    bottom:-8px;
+    left:-14px;
+    content:url(../img/tail.png);
+}
+.msg__time{
+    color: #9BA0AD;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.msg_my{
+    display:flex;
+    float:right;
+    justify-content: flex-end;
+    margin-right: 33px;
+    width:60%;
+}
+
+.msg_my .msg__text::before{
+    content:'';
+}
+.msg_my .msg__text::after{
+    display:block;
+    position: absolute;
+    bottom:-8px;
+    right:-14px;
+    content:url(../img/right-tail.png);
+}
+.msg_my{
+    margin-bottom:20px;
+}
+.right__chat{
+ 
 }
