@@ -461,6 +461,12 @@ table {
   left: -14px;
   bottom: -8px;
 }
+.inner-message_right .inner-message__text::before {
+  content: url("../img/right-tail.png");
+  position: absolute;
+  right: -14px;
+  bottom: -8px;
+}
 .inner-message__time {
   color: #9ba0ad;
 }
