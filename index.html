@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="content">
-		<div class="sidebar">
+		<div class="sidebar closed" id="sidebar">
 			<div class="logo">
 					<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<rect width="35" height="35" fill="url(#pattern0)"/>
@@ -103,7 +103,10 @@
 			</div>
 		</div>
 		<div class="header d-flex justify-content-between">
-			<div class="breadcrumbs">
+            <div class="burger-box" id="burger-box">
+                <span class="burger closed"  id="burger"></span>
+            </div>
+			<div class="breadcrumbs" id="bread">
 				<ul class="breadcrumbs__ul fs13 R_F d-flex">
 					<li class="breadcrumbs__li">
 						Home 	 
@@ -396,5 +399,6 @@
 		    </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
